@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/045fcf1fb1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-md" id="main">
+        <div id="heading" class="container-md ">
+            <h2>welcome to weather Application</h2>
+            <h3>search any city to see the weather information</h3>
+        </div>
+        <div class="container-md  " id="input-div">
+            <input id="user_input" type="text" placeholder="search here">
+            <button type="button" class="btn" id="btn">Search</button>
+        </div>
+        <div id="hide">
+
+            <div class="row" id="main2">
+                <div class="col-md-7">
+                    <div id="city">
+                        <div class="row ">
+                            <div id="first-col" class="col-4">
+                                <img id="img1" src="image/city.jpg" alt="image">
+                            </div>
+                            <div id="sec-col" class="col-8">
+                                <h3 id="city_name">city name</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="sp" class="col-8   ">
+                        <p id="coun" style="margin-bottom: 0px;">cd </p>
+                    </div>
+                    <div id="temp1">
+                        <img id="img2" src="image/temp.jpg" alt="image">
+                        <h3>Temperature <p id="temp" style="margin-bottom: 0px;">22c</p>
+                        </h3>
+                    </div>
+                    <div id="wind1">
+                        <img id="img3" src="image/windspeed.png" alt="image">
+                        <h3>Wind Speed <p id="wind" style="margin-bottom: 0px;">22c</p>
+                        </h3>
+                    </div>
+                    <div id="humi1">
+                        <img id="img4" src="image/humidity.png" alt="image">
+                        <h3>Humidity <p id="humi" style="margin-bottom: 0px;">22c</p>
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-md-5" id="main-day">
+
+                    <div id="day">
+                        <img id="my-img" src="" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="weather.js"></script>
+
+
+       
+</body>
+
+</html>
